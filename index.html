@@ -42,6 +42,7 @@
         </div>
       </div>
     </div>
+    <div class='mobile-nav'><a class="nav-link" href="about.html">About</a></div>
   </div>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -57,7 +58,13 @@
         slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: 'unslick'
+          }
+        ]
       });
     });
   </script>

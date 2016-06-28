@@ -2,58 +2,99 @@ body {
   margin: 0;
 }
 
-.slider-item {
-
-  /*height: 350px;*/
-
-}
-
 .slide-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -142px;
-}
-.slide-wrap:after {
-  content: "";
-  display: block;
-}
-.slide-footer, .slide-wrap:after {
-  height: 142px;
-}
-.slide-footer {
-  padding: 5 20;
-  background-color: rgba(255,255,255,0.5);
+  height: 350px
 }
 
-.slide-footer h2 {
-  margin: 5 0;
-}
 .slide-footer .nav-link {
-  float: right;
-  color: black;
+  display: none;
 }
 
-.mill-container {
-  /*width: 800px;*/
-  margin: 0 auto;
+.mobile-nav,
+.slide-footer {
+  margin: 5 10 20 10;
 }
 
-.slider-item {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-color: grey;
-  background-position: center;
-}
-
-.slider-item.one {
+.slider-item.one .slide-wrap {
   background-image: url("images/fullimage1.jpg");
 }
-.slider-item.two {
+.slider-item.two .slide-wrap {
   background-image: url("images/fullimage2.jpg");
 }
-.slider-item.three {
+.slider-item.three .slide-wrap {
   background-image: url("images/fullimage3.jpg");
 }
-.slider-item.about {
+.slider-item.about .slide-wrap {
   background-image: url("images/fullimage7.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-nav .nav-link {
+    display: none;
+  }
+
+  .slide-footer .nav-link {
+    display: inline;
+  }
+
+  .mobile-nav,
+  .slide-footer {
+    margin: 0;
+  }
+
+  .slide-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+  }
+  .slide-wrap:after {
+    content: "";
+    display: block;
+  }
+  .slide-footer, .slide-wrap:after {
+    height: 142px;
+  }
+  .slide-footer {
+    padding: 5 20;
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .slide-footer h2 {
+    margin: 5 0;
+  }
+  .slide-footer .nav-link {
+    float: right;
+    color: black;
+  }
+
+  .mill-container {
+    margin: 0 auto;
+  }
+
+  .slider-item {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-position: center;
+  }
+
+ .slider-item.one .slide-wrap,
+ .slider-item.two .slide-wrap,
+ .slider-item.three .slide-wrap,
+ .slider-item.about .slide-wrap {
+    background-image: none;
+  }
+
+  .slider-item.one {
+    background-image: url("images/fullimage1.jpg");
+  }
+  .slider-item.two {
+    background-image: url("images/fullimage2.jpg");
+  }
+  .slider-item.three {
+    background-image: url("images/fullimage3.jpg");
+  }
+  .slider-item.about {
+    background-image: url("images/fullimage7.jpg");
+  }
 }
