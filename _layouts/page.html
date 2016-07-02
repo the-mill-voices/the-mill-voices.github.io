@@ -1,14 +1,18 @@
 ---
-layout: default
+layout: slideshow
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<div class="post-list slider">
+    <div class='slider-item one' data-image-src='/images/{{ page.image_large }}'>
+      <img src='/images/{{ page.image_600 }}' alt='{{ page.image_alt }}'/>
+      <div class="slide-wrap"></div>
+      <div class="slide-footer">
+        <a class="nav-link" href="/">Home</a>
+        <h2>{{ page.title }}</h2>
+        {{ page.content }}
+        <!-- <p>
+          {{ slide.}}
+        </p> -->
+      </div>
+    </div>
+</div>

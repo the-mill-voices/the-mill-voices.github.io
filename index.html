@@ -3,38 +3,18 @@ layout: slideshow
 ---
 
 <div class="post-list slider">
-  <div class='slider-item one' data-image-src="/images/isabel_1600_P1010849.jpg">
-    <img src='/images/isabel_600_P1010849.jpg' alt='The Mill'/>
-    <div class="slide-wrap"></div>
-    <div class="slide-footer">
-      <a class="nav-link" href="about.html">?</a>
-      <h2>Someone is on one picture</h2>
-      <p>
-        Maecenas mollis maximus imperdiet. Nam tincidunt, lectus vitae accumsan suscipit, lacus odio ultricies massa, ut volutpat purus lacus a felis. Nam vitae tortor quis diam euismod ornare. Integer volutpat nisl at velit rhoncus blandit. Nulla tempor eget ex in tincidunt. Vivamus sit amet fermentum est. Praesent non posuere purus. Donec congue mauris id odio varius, et mollis erat tincidunt. Nullam eu purus ac neque lobortis rutrum. Morbi tempor volutpat consequat. Donec nec neque dictum, vulputate dolor sit amet, viverra enim. Maecenas pellentesque nisi id diam varius blandit.
-      </p>
+  {% for slide in site.posts %}
+    <div class='slider-item one' data-image-src='/images/{{ slide.image_large }}'>
+      <img src='/images/{{ slide.image_600 }}' alt='{{ slide.image_alt }}'/>
+      <div class="slide-wrap"></div>
+      <div class="slide-footer">
+        <a class="nav-link" href="about">?</a>
+        <h2>{{ slide.title }}</h2>
+        {{ slide.content }}
+        <!-- <p>
+          {{ slide.}}
+        </p> -->
+      </div>
     </div>
-  </div>
-  <div class='slider-item two' data-image-src="/images/Charlotte_1600_P1010917.jpg">
-    <img src='/images/Charlotte_600_P1010917.jpg' alt='The Mill'/>
-    <div class="slide-wrap"></div>
-    <div class="slide-footer">
-      <a class="nav-link" href="about.html">?</a>
-
-      <h2>Another one is on anoter picture</h2>
-      <p>
-        Ut volutpat purus lacus a felis. Nam vitae tortor quis diam euismod ornare. Integer volutpat nisl at velit rhoncus blandit. Nulla tempor eget ex in tincidunt. Vivamus sit amet fermentum est. Praesent non posuere purus. Donec congue mauris id odio varius, et mollis erat tincidunt. Nullam eu purus ac neque lobortis rutrum. Morbi tempor volutpat consequat. Donec nec neque dictum, vulputate dolor sit amet, viverra enim. Maecenas pellentesque nisi id diam varius blandit.
-      </p>
-    </div>
-  </div>
-  <div class='slider-item three' data-image-src="/images/Clare_1600_P1010982.jpg">
-    <img src='/images/Clare_600_P1010982.jpg' alt='The Mill'/>
-    <div class="slide-wrap"></div>
-    <div class="slide-footer">
-      <a class="nav-link" href="about.html">?</a>
-      <h2>And one is on a third picture</h2>
-      <p>
-        Maecenas mollis maximus imperdiet. Nam tincidunt, lectus vitae accumsan suscipit, lacus odio ultricies massa.
-      </p>
-    </div>
-  </div>
+  {% endfor %}
 </div>
