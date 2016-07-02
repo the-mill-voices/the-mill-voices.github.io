@@ -1,16 +1,15 @@
 body {
   margin: 0;
-  // font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: white;
   background-color: black;
 }
 
 #mill-container {
-  
-  //  p, a {
-  //    line-height: 130%;
-  //    font-weight: 300;
-  //  }
+
+   p, a {
+     line-height: 140%;
+     font-weight: 300;
+   }
 
   a.nav-link {
     color: white;
@@ -32,21 +31,30 @@ body {
 
   .mobile-nav,
   .slide-footer {
-    margin: 5 10 20 10;
+    margin: 5px 10px 20px 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html, body, #mill-container, .slider, .slick-list, .slick-track{
+    margin:0; padding:0; height:100%; width:100%;
   }
 
-  @media screen and (min-width: 600px) {
-    .mobile-nav .nav-link {
+  #mill-container {
+    margin: 0 auto;
+
+    .slider-item {
+      min-height: 100%;
+      height: 100%;
+    }
+
+    .slider-item img {
       display: none;
     }
 
-    .slide-footer .nav-link {
-      display: inline;
-    }
-
-    .mobile-nav,
-    .slide-footer {
-      margin: 0;
+    .slider-item {
+      background-size: cover;
+      background-image: attr(data-image-src url);
     }
 
     .slide-wrap {
@@ -56,10 +64,6 @@ body {
       margin-bottom: -142px;
     }
 
-    .slider-item img {
-      display: none;
-    }
-
     .slide-wrap:after {
       content: "";
       display: block;
@@ -67,36 +71,33 @@ body {
     .slide-footer, .slide-wrap:after {
       height: 142px;
     }
+
+    .mobile-nav,
     .slide-footer {
-      padding: 5 20;
+      margin: 0;
+    }
+
+    .slide-footer {
       background-color: rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+    .slide-footer p {
+      margin: 0 20px;
     }
 
     .slide-footer h2 {
-      margin: 5 0;
+      margin: 5px 20px;
     }
+
     .slide-footer .nav-link {
+      margin-top: 10px;
+      margin-right: 20px;
       float: right;
+      display: inline;
     }
 
-
-    .mill-container {
-      margin: 0 auto;
-    }
-
-    .slider-item {
-      background-size: cover;
-    }
-
-   .slider-item.one .slide-wrap,
-   .slider-item.two .slide-wrap,
-   .slider-item.three .slide-wrap,
-   .slider-item.about .slide-wrap {
-      background-image: none;
-    }
-
-    .slider-item {
-      background-image: attr(data-image-src url);
+    .mobile-nav .nav-link {
+      display: none;
     }
   }
 }
