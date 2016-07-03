@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "About this project"
+title:  About The Mill Voices
 image_alt: 'Norman'
 image_600: 'Norman_600_VoluntaryAction3.JPG'
 image_large: 'Norman_1600_VoluntaryAction3.JPG'

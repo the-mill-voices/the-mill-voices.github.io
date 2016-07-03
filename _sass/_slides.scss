@@ -1,20 +1,8 @@
-body {
-  margin: 0;
-  color: white;
-  background-color: black;
+#site_title {
+  margin: 5px 10px;
 }
 
-#mill-container {
-
-   p, a {
-     line-height: 140%;
-     font-weight: 300;
-   }
-
-  a.nav-link {
-    color: white;
-    text-decoration: none;
-  }
+#slides-container {
 
   .slide-wrap {
     display: none;
@@ -36,11 +24,15 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  html, body, #mill-container, .slider, .slick-list, .slick-track{
+  html, body, #slides-container, .slider, .slick-list, .slick-track{
     margin:0; padding:0; height:100%; width:100%;
   }
 
-  #mill-container {
+  #site_title {
+    display: none;
+  }
+
+  #slides-container {
     margin: 0 auto;
 
     .slider-item {

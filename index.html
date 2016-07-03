@@ -9,7 +9,9 @@ layout: slideshow
       <div class="slide-wrap"></div>
       <div class="slide-footer">
         <a class="nav-link" href="about">?</a>
-        <h2>{{ slide.title }}</h2>
+        <h2>
+          <a class="post-link" href="{{ slide.url | prepend: site.baseurl }}">{{ slide.title }}</a>
+        </h2>
         {{ slide.content }}
       </div>
     </div>
