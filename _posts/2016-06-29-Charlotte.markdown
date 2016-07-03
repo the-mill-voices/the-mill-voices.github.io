@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Charlotte is on one picture"
 image_alt: 'Charlotte'
 image_600: 'Charlotte_600_P1010917.jpg'

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Someone is on one picture"
 image_alt: 'Clare'
 image_600: 'Clare_600_P1010982.jpg'
