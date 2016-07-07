@@ -49,19 +49,26 @@
       background-image: attr(data-image-src url);
     }
 
-    .slide-wrap {
+   .slide-wrap {
       display: block;
       min-height: 100%;
       /* equal to footer height */
       margin-bottom: -142px;
+    }
+    .page .slide-wrap {
+      margin-bottom: -182px;
     }
 
     .slide-wrap:after {
       content: "";
       display: block;
     }
+
     .slide-footer, .slide-wrap:after {
       height: 142px;
+    }
+    .page .slide-footer, .slide-wrap:after {
+      height: 182px;
     }
 
     .mobile-nav,

@@ -5,7 +5,9 @@ layout: slideshow
 <div class="post-list slider">
   {% for slide in site.posts %}
     <div class='slider-item one' data-image-src='/images/{{ slide.image_large }}'>
-      <img src='/images/{{ slide.image_600 }}' alt='{{ slide.image_alt }}'/>
+      {% if slide.image_600 %}
+        <img src='/images/{{ slide.image_600 }}' alt='{% if slide.image_alt %}{{ slide.image_alt }}{% else %}{{ slide.title }}{% endif %}'/>
+      {% endif %}
       <div class="slide-wrap"></div>
       <div class="slide-footer">
         <a class="nav-link" href="about">?</a>
