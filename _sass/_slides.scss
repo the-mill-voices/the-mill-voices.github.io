@@ -35,6 +35,15 @@
   #slides-container {
     margin: 0 auto;
 
+    .slick-prev {
+      left: 10px;
+      z-index: 1;
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+
     .slider-item {
       min-height: 100%;
       height: 100%;
