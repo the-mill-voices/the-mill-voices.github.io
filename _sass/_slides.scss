@@ -38,10 +38,12 @@
     .slick-prev {
       left: 10px;
       z-index: 1;
+      text-shadow: 0 0 2px darkgrey;
     }
 
     .slick-next {
       right: 10px;
+      text-shadow: 0 0 2px darkgrey;
     }
 
     .slider-item {
