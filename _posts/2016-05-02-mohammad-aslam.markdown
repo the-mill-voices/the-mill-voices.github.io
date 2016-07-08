@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Mohammad Aslam, The Mill user
+title: Mohammad Aslam, regular visitor (Card Player)
 image_600:
 image_large:
 
 ---
-TBA
+A friend introduced me to the Mill a year ago; i live in Walthamstow but on the other side. We all know each other from the mosque and we come here two or three times a week and play Trumps. I like the staff at the Mill; everybody is really friendly.

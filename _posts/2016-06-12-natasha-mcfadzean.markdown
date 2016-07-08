@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Natasha McFadzean, Center Manager
+title:  Natasha McFadzean, Centre Manager
 image_600: natasha_600_P1010854.jpg
 image_large: natasha_1600_P1010854.jpg
 

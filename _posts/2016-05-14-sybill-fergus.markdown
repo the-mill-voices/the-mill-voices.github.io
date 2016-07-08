@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sybil Fergus, Mill user (Kids Art)
+title: Sybil Fergus, regular visitor (Kids Art)
 image_600: Sybil_600_P1010898.jpg
 image_large: Sybil_1600_P1010898.jpg
 
