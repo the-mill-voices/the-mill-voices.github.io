@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  About The Mill Voices
+title:  About The Mill Stories
 image_alt: The Mill front
 image_600: cover_600_P1020145.jpg
 image_large: cover_1600_P1020145.jpg
