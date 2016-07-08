@@ -5,4 +5,4 @@ image_600:
 image_large:
 
 ---
-A friend introduced me to the Mill a year ago; i live in Walthamstow but on the other side. We all know each other from the mosque and we come here two or three times a week and play Trumps. I like the staff at the Mill; everybody is really friendly.
+A friend introduced me to The Mill a year ago; i live in Walthamstow but on the other side. We all know each other from the mosque and we come here two or three times a week and play Trumps. I like the staff at The Mill; everybody is really friendly.
